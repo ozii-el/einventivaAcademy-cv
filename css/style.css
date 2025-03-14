@@ -1,0 +1,145 @@
+body {
+    font-family: "Ubuntu";
+    
+}
+.content-body {
+    margin-left: 30%;
+    padding: 2%;
+}
+.top {
+    display: flex;
+    justify-content: block;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding-left: 5%;
+}
+
+.tp-img {
+    width: 235px;
+    height: 235px;
+    border-radius: 0% 30% 0% 30%;
+    border: solid 5px #E98522;
+    margin: 1%;
+    z-index: 7;
+    box-shadow: 17px 0px 18px -7px rgba(0, 0, 0, 0.43);
+}
+
+.tp-titles {
+    background-color: #E98522 ;
+    color: white;
+    text-align: start;
+    padding-left: 10%;
+    margin-left: -10%;
+    width: 100%;
+    z-index: 6;
+}
+
+.sidebar {
+    
+    width: 30%;
+    min-height: 100vh;
+    position: absolute;
+    background-color: #1D1F31;
+    padding-top: 20%;
+    margin-top: -20%;
+    z-index: 5;
+   
+
+}
+
+.sidebar-titles {
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: #E98522;
+    padding: 2% 0;
+    z-index: 5;
+    margin-right: -2%;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 9px 19px 14px -17px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar-contact {
+    position: relative;
+    color: white;
+    display: block;
+    gap: 20%;
+    padding: 2%;
+    text-decoration: none;
+}
+.sidebar-contact span {
+    margin-left: 1%;
+}
+
+
+.icon-contact {
+ background-color: #E98522;
+ padding: 1.5%;
+ border-radius: 50%;
+ align-items: center;
+ text-align: center;
+}
+
+.sidebar-content ul {
+    columns: 2;
+    color: white;
+
+}
+
+.side-percent{
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+   
+}
+
+.sidebar-content-percentage {
+    display: block;
+    
+}
+
+.sidebar-content-percentage-title{
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar-content-cert {
+    color: white;
+    display: flex;
+    padding: 2%;
+}
+.sidebar-content-cert b {
+ margin-left: 2%;
+
+}
+.sidebar-content-cert ul {
+    list-style: none;
+        padding: 0;
+        
+}
+
+.sidebar-content-cert ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.sidebar-content-cert ul li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #E98522;
+        mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>');
+        mask-size: contain;
+        mask-repeat: no-repeat;
+    
+}
+
+.sidebar-cert-img {
+    padding: 2%;
+}
