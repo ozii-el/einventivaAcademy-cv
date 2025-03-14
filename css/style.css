@@ -2,9 +2,16 @@ body {
     font-family: "Ubuntu";
     
 }
+p {
+    line-height: 1.8;
+}
+h3 {
+    font-size: 25px;
+}
 .content-body {
     margin-left: 30%;
     padding: 2%;
+    margin-top: -1%;
 }
 .top {
     display: flex;
@@ -43,6 +50,7 @@ body {
     background-color: #1D1F31;
     padding-top: 20%;
     margin-top: -20%;
+    padding-bottom: 10%;
     z-index: 5;
    
 
@@ -142,4 +150,61 @@ body {
 
 .sidebar-cert-img {
     padding: 2%;
+    
+}
+
+
+.sidebar-cert-img-anim {
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.sidebar-cert-img-anim:hover {
+    transform: scale(1.1);
+}
+
+.sidebar-intereses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.interes {
+    display: flex;
+    flex-direction: column;
+    /* Ícono arriba, texto abajo */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+    justify-content: center;
+    /* Centra elementos verticalmente */
+}
+
+.icon-intereses {
+    display: block;
+}
+
+.interes span {
+    margin-top: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+.content-linear-grp {
+   display: inline;
+}
+.content-linear-grp-back {
+background-color: #7F7F7F;
+height: 2px;
+}
+.content-linear-grp-grey {
+background-color: #E98522;
+    margin-top: -6px;
+    height: 10px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.content-about-text {
+    
 }
