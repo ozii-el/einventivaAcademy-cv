@@ -1,6 +1,6 @@
 body {
     font-family: "Ubuntu";
-    
+        margin-left: -0.1%;
 }
 p {
     line-height: 1.8;
@@ -9,8 +9,9 @@ h3 {
     font-size: 25px;
 }
 .content-body {
-    margin-left: 30%;
+
     padding: 2%;
+    padding-left: 3%;
     margin-top: -1%;
 }
 .top {
@@ -42,15 +43,20 @@ h3 {
     z-index: 6;
 }
 
+.body-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+}
 .sidebar {
     
-    width: 30%;
+    /* width: 30%;
     min-height: 100vh;
-    position: absolute;
+    position: absolute; */
     background-color: #1D1F31;
-    padding-top: 20%;
-    margin-top: -20%;
-    padding-bottom: 10%;
+    padding-top: 80%;
+    margin-top: -80%;
+    padding-bottom: 20%; 
     z-index: 5;
    
 
@@ -96,15 +102,10 @@ h3 {
 }
 
 .side-percent{
-        display: flex;
-            justify-content: space-between;
-            align-items: center;
+    margin-left: 3%;
+    display: grid;
+        grid-template-columns: 30% 30% 30%;
    
-}
-
-.sidebar-content-percentage {
-    display: block;
-    
 }
 
 .sidebar-content-percentage-title{
@@ -164,20 +165,23 @@ h3 {
 }
 
 .sidebar-intereses {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 5%; */
+    display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
 }
 
 .interes {
     display: flex;
     flex-direction: column;
-    /* Ícono arriba, texto abajo */
+    
     align-items: center;
-    /* Centra elementos horizontalmente */
+    
     justify-content: center;
-    /* Centra elementos verticalmente */
+    
 }
 
 .icon-intereses {
@@ -205,6 +209,97 @@ background-color: #E98522;
     border-radius: 5px;
 }
 
-.content-about-text {
-    
+.edu-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+.edu-grid-item {
+    padding: 2%;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.exp-grid-item {
+    padding: 2%;
+}
+
+.exp-info li{
+    list-style: none;
+}
+
+.exp-info {
+    align-self: center;
+}
+
+.exp-date {
+    align-self: center;
+}
+
+
+@media screen and (max-width: 1594px) {
+    .side-percent {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+}
+
+@media screen and (max-width: 1406px) {
+    .side-percent {
+        grid-template-columns: 50% 50%;
+    }
+        .sidebar-intereses {
+        grid-template-columns: 50% 50% !important;
+
+
+    }
+}
+
+@media screen and (max-width: 1184px) {
+    .sidebar {
+        padding-top: 150%;
+        margin-top: -150%;
+    }
+
+    .sidebar-content ul {
+        columns: 1;
+    }
+
+    .sidebar-intereses {
+        grid-template-columns: 50% 50% !important;
+
+
+    }
+}
+
+@media screen and (max-width: 892px) {
+    .side-percent {
+        grid-template-columns: 100%;
+    }
+
+    .sidebar-content-percentage-title {
+        text-align: left !important;
+    }
+
+    .sidebar {
+        padding-top: 150%;
+        margin-top: -150%;
+    }
+
+    .sidebar-content ul {
+        columns: 1;
+
+
+    }
+    .sidebar-intereses {
+        grid-template-columns: 100% !important;
+
+
+    }
 }
