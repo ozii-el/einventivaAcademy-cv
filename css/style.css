@@ -1,6 +1,7 @@
 body {
     font-family: "Ubuntu";
         margin-left: -0.1%;
+        line-height: 1.8;
 }
 p {
     line-height: 1.8;
@@ -212,7 +213,7 @@ background-color: #E98522;
 .edu-grid{
     display: grid;
     grid-template-columns: 30% 70%;
-    align-items: center;
+    align-self: start;
 }
 
 .edu-grid-item {
@@ -222,7 +223,7 @@ background-color: #E98522;
 .exp-grid {
     display: grid;
     grid-template-columns: 30% 70%;
-    align-items: center;
+    align-self: start;
     line-height: 1.4;
 }
 
@@ -235,13 +236,62 @@ background-color: #E98522;
 }
 
 .exp-info {
-    align-self: center;
+    align-self: start;
+
 }
 
 .exp-date {
-    align-self: center;
+    align-self: start;
+
+
+}
+.foo-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: #1D1F31;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+          
 }
 
+.foo-copy {
+    color: #fff;
+
+    
+}
+
+.foo-menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.lang {
+    padding-bottom: 3%;
+}
+.lang-title{
+    font-size: 25px;
+    padding: 2%;
+    
+}
+.lang-level {
+    display: grid;
+        grid-template-columns: 50% 50%;
+}
+.lang-skill {
+    padding: 2%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.checked {
+    color: #E98522;
+}
+
+.unchecked {
+    color: #DDDDDD;
+}
 
 @media screen and (max-width: 1594px) {
     .side-percent {
@@ -276,6 +326,10 @@ background-color: #E98522;
 
 
     }
+    .lang-level {
+
+        grid-template-columns: 100%;
+}
 }
 
 @media screen and (max-width: 892px) {
