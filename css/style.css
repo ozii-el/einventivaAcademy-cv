@@ -3,6 +3,7 @@ body {
         margin-left: -0.1%;
         line-height: 1.8;
 }
+
 p {
     line-height: 1.8;
 }
@@ -150,6 +151,19 @@ h3 {
     
 }
 
+.sid-cert-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.sid-cert-grid-img {
+    text-align: center;
+    align-self: center;
+    padding: 2%;
+
+}
+
+
 .sidebar-cert-img {
     padding: 2%;
     
@@ -210,6 +224,10 @@ background-color: #E98522;
     border-radius: 5px;
 }
 
+.edu-date {
+    font-weight: 700;
+    font-size: 24px;
+}
 .edu-grid{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -220,6 +238,13 @@ background-color: #E98522;
     padding: 2%;
 }
 
+.edu-info {
+    font-size: larger;
+}
+.edu-info p {
+    align-self: start;
+    font-size: 24px;
+}
 .exp-grid {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -237,11 +262,20 @@ background-color: #E98522;
 
 .exp-info {
     align-self: start;
-
+    font-size: larger;
+    
 }
+
+.exp-info p{
+    align-self: start;
+    font-size: 24px;
+}
+
 
 .exp-date {
     align-self: start;
+    font-weight: 700;
+    font-size: 24px;
 
 
 }
@@ -309,6 +343,10 @@ background-color: #E98522;
 
 
     }
+    .sid-cert-grid {
+
+    grid-template-columns: 50% 50%;
+    }
 }
 
 @media screen and (max-width: 1184px) {
@@ -330,6 +368,35 @@ background-color: #E98522;
 
         grid-template-columns: 100%;
 }
+.edu-info p {
+    font-size: 20px;
+}
+
+.exp-info p {
+    font-size: 20px;
+}
+
+.edu-info {
+    font-size: 20px;
+}
+
+.exp-info {
+    font-size: 20px;
+}
+
+.exp-date {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.edu-date {
+    font-weight: 500;
+    font-size: 20px;
+}
+    .sid-cert-grid {
+
+    grid-template-columns: 50% 50%;
+    }
 }
 
 @media screen and (max-width: 892px) {
@@ -353,7 +420,30 @@ background-color: #E98522;
     }
     .sidebar-intereses {
         grid-template-columns: 100% !important;
+    }
+    .edu-info p {
+    font-size: 18px;
+    }
+    .exp-info p {
+    font-size: 18px;
+    }
+        .edu-info {
+            font-size: 18px;
+        }
+    
+        .exp-info  {
+            font-size: 18px;
+        }
+    .exp-date {
+        font-weight: 500;
+    font-size: 18px;
+    }
+    .edu-date {
+        font-weight: 500;
+    font-size: 18px;
+    }
+    .sid-cert-grid {
 
-
+    grid-template-columns: 100%;
     }
 }
