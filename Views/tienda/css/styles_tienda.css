@@ -25,7 +25,7 @@ body {
     width: 80%;
     border-radius: 60px;
     outline: none;
-    border: 2px solid #007bff;
+    border: 2px solid #C90A1A;
     margin-right: -35px;
 }
 
@@ -34,7 +34,7 @@ body {
     width: 40%;
     outline: none;
     border: none;
-    background-color: #007bff;
+    background-color: #C90A1A;
     color: white;
     font-weight: bold;
     border-radius: 60px;
@@ -43,11 +43,15 @@ body {
 .hero {
     background: url('../assets/img/hero3.png') no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
     background-position: left;
     width: 100%;
 }
 
+.hero-text {
+   padding-top: 20rem;
+}
+
 .features {
-    background-color: red;
+    background-color: #C90A1A;
 }
