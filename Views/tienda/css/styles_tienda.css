@@ -43,9 +43,10 @@ body {
 .hero {
     background: url('../assets/img/hero3.png') no-repeat;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
     background-position: left;
     width: 100%;
+    margin-top: 5rem;
 }
 
 .hero-text {
