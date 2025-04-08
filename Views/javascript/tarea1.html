@@ -17,13 +17,436 @@
 }
 </style>
 <body>
-    <section class="container my-5">
-        <div class="row py-5 ">
-            <button class="btn btn-primary col-4" onclick="calcularConsumo()">⛽ Calcular consumo</button>
-            <button class="btn btn-primary offset-lg-3 col-4" onclick="cambioUnidades()">🧮 Cambio unidades</button>
-        </div>
-    </section>
+
     
+    <section class="container">
+        <div class="row">
+            
+            <div class="card my-5" style="width: 100%; background-color: #272A36;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #F5f3f1;">Consumo Gasolina</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" style="color: #F5f3f1 !important;">Explicación de la solución</h6>
+                    <span class="card-text" style="color: #4F92C8;">
+                        function</span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        calcularConsumo
+                    </span>
+                    <span class="card-text" style="color: #CBCC00;">
+                        () {
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        KM
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        prompt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        "🚘 ¿Kilometros recorridos de tu carro? 🚘"
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        Lts
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        prompt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        "📉 ¿Número de litros consumidos? 📉"
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br><br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        Gas
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        Lts
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        /
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        KM
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        gasto
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        Gas
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        .
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        toFixed
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #94CEA8;">
+                        2
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        alert
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        '💸💸 Tu carro gasta: '
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        +
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        gasto
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        +
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        ' litros por cada kilometro 💸💸'
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #CBCC00;">
+                    }
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <p class="card-text"></p>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="calcularConsumo()">⛽ Calcular consumo</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 100%; background-color: #272A36;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #F5f3f1;">Minutos a segundos</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" style="color: #F5f3f1 !important;">Explicación de la solución
+                    </h6>
+                    <span class="card-text" style="color: #4F92C8;">
+                        function</span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        cambioUnidades
+                    </span>
+                    <span class="card-text" style="color: #CBCC00;">
+                        () {
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        hora
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        prompt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        "⌚Dame la hora a convertir a segundos⌚"
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horaSplit
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        hora
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        .
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        split
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        ":"
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horas
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horaSplit
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        [
+                    </span>
+                    <span class="card-text" style="color: #94CEA8;">
+                        0
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        ]
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horas
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        minutos
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        [
+                    </span>
+                    <span class="card-text" style="color: #94CEA8;">
+                        1
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        ]
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horasMin
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        parseInt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horas
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        *
+                    </span>
+                    <span class="card-text" style="color: #94CEA8;">
+                        60
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        minTotal
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        parseInt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        horasMin
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        +
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        parseInt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        minutos
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <span class="card-text" style="color: #4F92C8;">
+                        let
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        minSeg
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        =
+                    </span>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        parseInt
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        minTotal
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        *
+                    </span>
+                    
+                    <span class="card-text" style="color: #94CEA8;">
+                        60
+                    </span>
+                    
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #DCDC9D;">
+                        alert
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        (
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        '💸💸 Tu carro gasta: '
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        +
+                    </span>
+                    <span class="card-text" style="color: #5CB8E8;">
+                        gasto
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        +
+                    </span>
+                    <span class="card-text" style="color: #AC7756;">
+                        ' litros por cada kilometro 💸💸'
+                    </span>
+                    <span class="card-text" style="color: #D365B0;">
+                        )
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <span class="card-text" style="color: #CBCC00;">
+                        }
+                    </span>
+                    <span class="card-text" style="color: #F5f3f1;">
+                        ;
+                    </span>
+                    <br>
+                    <p class="card-text"></p>
+                    <button class="btn btn-primary" style="width: 100%;" onclick="cambioUnidades()">🧮 Cambio unidades</button>
+                </div>
+            </div>
+            
+           
+
+            
+        </div>
+
+    </section>
 
     <script src="km.js"></script> <!-- Aquí enlazas tu script -->
 </body>
