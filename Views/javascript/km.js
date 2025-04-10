@@ -25,6 +25,6 @@ let minTotal = parseInt(horasMin) + parseInt(minutos);
 let minSeg = parseInt(minTotal) * 60;
 
 
-alert("🕑" + hora + " horas, es igual a " + minSeg + " segundos 🕑")
+alert("🕑 " + hora + " horas, es igual a " + minSeg + " segundos 🕑")
 
 };
