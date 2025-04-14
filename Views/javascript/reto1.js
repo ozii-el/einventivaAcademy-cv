@@ -73,7 +73,7 @@ function reemplazarSignosPorEmojis(idParrafo) {
 // Ejecución en orden
 document.addEventListener("DOMContentLoaded", function() {
     resaltarPalabrasLargas('miParrafo');
-    agregarEnlaceSobreParrafo('miParrafo', 'https://www.sitio-ficticio.com', 'Visitar sitio ficticio');
+    agregarEnlaceSobreParrafo('miParrafo', 'https://ozii-el.github.io/einventivaAcademy-cv/Views/', 'Visitar sitio:');
     separarParrafoEnLineas('miParrafo');
     contarPalabras('miParrafo', 'contadorPalabras');
     reemplazarSignosPorEmojis('miParrafo');
