@@ -1,20 +1,20 @@
-function resaltarPalabrasLargas(idParrafo) {
-    const parrafo = document.getElementById(idParrafo);
-    if (!parrafo) return;
+// function resaltarPalabrasLargas(idParrafo) {
+//     const parrafo = document.getElementById(idParrafo);
+//     if (!parrafo) return;
 
-    const palabras = parrafo.textContent.split(/\s+/);
+//     const palabras = parrafo.textContent.split(/\s+/);
 
-    const nuevoHTML = palabras.map(palabra => {
-        let limpia = palabra.replace(/[.,;!?]+$/, '');
-        if (limpia.length > 8) {
-            return `<span style="background-color: yellow;">${palabra}</span>`;
-        } else {
-            return palabra;
-        }
-    }).join(' ');
+//     const nuevoHTML = palabras.map(palabra => {
+//         let limpia = palabra.replace(/[.,;!?]+$/, '');
+//         if (limpia.length > 8) {
+//             return `<span style="background-color: yellow;">${palabra}</span>`;
+//         } else {
+//             return palabra;
+//         }
+//     }).join(' ');
 
-    parrafo.innerHTML = nuevoHTML;
-}
+//     parrafo.innerHTML = nuevoHTML;
+// }
 
 // Función para agregar enlace sobre el párrafo
 function agregarEnlaceSobreParrafo(idParrafo, url, texto) {
@@ -31,15 +31,39 @@ function agregarEnlaceSobreParrafo(idParrafo, url, texto) {
     parrafo.parentNode.insertBefore(enlace, parrafo);
 }
 
-function separarParrafoEnLineas(idParrafo) {
+// function separarParrafoEnLineas(idParrafo) {
+//     const parrafo = document.getElementById(idParrafo);
+//     if (!parrafo) return;
+
+//     const texto = parrafo.textContent;
+//     const oraciones = texto.split('.').filter(o => o.trim().length > 0); // Eliminar vacíos
+
+//     const nuevoHTML = oraciones.map(oracion => {
+//         return `${oracion.trim()}.<br>`;
+//     }).join('');
+
+//     parrafo.innerHTML = nuevoHTML;
+// }
+
+function resaltarYSeparar(idParrafo) {
     const parrafo = document.getElementById(idParrafo);
     if (!parrafo) return;
 
     const texto = parrafo.textContent;
-    const oraciones = texto.split('.').filter(o => o.trim().length > 0); // Eliminar vacíos
+    const oraciones = texto.split('.').filter(o => o.trim().length > 0);
 
     const nuevoHTML = oraciones.map(oracion => {
-        return `${oracion.trim()}.<br>`;
+        const palabras = oracion.trim().split(/\s+/);
+        const oracionResaltada = palabras.map(palabra => {
+            let limpia = palabra.replace(/[.,;!?]+$/, ''); // limpiar signos finales
+            if (limpia.length > 8) {
+                return `<span style="background-color: yellow;">${palabra}</span>`;
+            } else {
+                return palabra;
+            }
+        }).join(' ');
+
+        return `${oracionResaltada}.<br>`;
     }).join('');
 
     parrafo.innerHTML = nuevoHTML;
@@ -72,9 +96,8 @@ function reemplazarSignosPorEmojis(idParrafo) {
 
 // Ejecución en orden
 document.addEventListener("DOMContentLoaded", function() {
-    resaltarPalabrasLargas('miParrafo');
+    resaltarYSeparar('miParrafo');
     agregarEnlaceSobreParrafo('miParrafo', 'https://ozii-el.github.io/einventivaAcademy-cv/Views/', 'Visitar sitio:');
-    separarParrafoEnLineas('miParrafo');
     contarPalabras('miParrafo', 'contadorPalabras');
     reemplazarSignosPorEmojis('miParrafo');
 });
