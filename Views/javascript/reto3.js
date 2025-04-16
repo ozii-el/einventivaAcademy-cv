@@ -151,7 +151,26 @@ function updatePlanPrice(planId, monthlyPrice, paymentType) {
         console.error(`Element with id "${planId}" not found.`);
     }
 }
-
+// Function to reset the document to its original HTML
+function resetDocument() {
+    // Fetch the original HTML from the server or a predefined source
+    fetch('tarea2-3.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch the original HTML.');
+            }
+            return response.text();
+        })
+        .then(originalHTML => {
+            // Replace the current document's body with the original HTML
+            document.open();
+            document.write(originalHTML);
+            document.close();
+        })
+        .catch(error => {
+            console.error('Error resetting the document:', error);
+        });
+}
 
 // Ensure the function runs after the DOM is fully loaded
 // document.addEventListener('DOMContentLoaded', () => {
