@@ -18,6 +18,7 @@ let horaSplit = hora.split(":");
 let horas = horaSplit[0];
 let minutos = horaSplit[1];
 
+
 //alert("Formato separado: horas: " + horas + " minutos:" + minutos )
 
 let horasMin = parseInt(horas) * 60; 
